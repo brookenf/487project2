@@ -10,8 +10,13 @@
   <!--css stylesheet-->
   <link rel="stylesheet" href="css/styles.css" type="text/css" />
 
-  <!--jQuery css-->
+  <!--jQuery slider plugin css-->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.5/jquery.pagepiling.min.css" />
+
+  <!--SlickQuiz jQuery plugin css-->
+  <link href="css/reset.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/slickQuiz.css" media="screen" rel="stylesheet" type="text/css">
+
 
   <!--Google fonts-->
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
@@ -31,9 +36,8 @@
 
     <!--Page 2-->
   	<div class="section" id="section2">
-      <a href="https://fontmeme.com/fortnite-video-game-font/"><img src="https://fontmeme.com/permalink/181008/557d9b4165c52876ccd7ba72ae8d5a16.png" alt="fortnite-video-game-font" border="0"></a>
       <p>
-        2.5.19
+        Section 2
       </p>
     </div>
 
@@ -58,11 +62,32 @@
       </p>
     </div>
 
-    <!--Page 6-->
+    <!--Page 6 Quiz-->
     <div class="section" id="section6">
-      <p>
-        Quiz Your Knowledge
-      </p>
+      <div id="slickQuiz">
+        <h1 class="quizName">Test Your Knowledge</h1>
+
+          <div class="quizArea">
+              <div class="quizHeader">
+                  <!-- where the quiz main copy goes -->
+
+                  <a class="button startQuiz" href="#">Get Started!</a>
+              </div>
+
+              <!-- where the quiz gets built -->
+          </div>
+
+          <div class="quizResults">
+              <h3 class="quizScore">You Scored: <span><!-- where the quiz score goes --></span></h3>
+
+              <h3 class="quizLevel"><strong>Ranking:</strong> <span><!-- where the quiz ranking level goes --></span></h3>
+
+              <div class="quizResultsCopy">
+                  <!-- where the quiz result copy goes -->
+              </div>
+          </div>
+      <!--closing of the SlickQuiz-->
+      </div>
     </div>
 
     <!--Page 7-->
@@ -83,6 +108,9 @@
     crossorigin="anonymous"></script>
   <!--adding in jquery slider -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.5/jquery.pagepiling.min.js" type="text/javascript"></script>
+  <!--adding in the SlickQuiz jQuery-->
+  <script src="js/slickQuiz-config.js"></script>
+  <script src="js/slickQuiz.js"></script>
   <script src="js/scripts.js"></script>
 </body>
 </html>

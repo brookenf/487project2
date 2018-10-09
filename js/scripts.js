@@ -36,6 +36,11 @@ $(function(){
 		afterRender: function(){},
 	});
 
+  //initializing the quiz
+  $('#slickQuiz').slickQuiz({
+        // options
+    });
+
 
 //*closing of the document.ready
 });
