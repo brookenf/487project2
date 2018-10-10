@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .section{
@@ -60,7 +61,6 @@
 
 .photos{
   grid-area: photos;
-  flex-direction: column;
 }
 
 .photos img, .judges img{
@@ -72,32 +72,31 @@
 .info{
   grid-area: info;
   text-align: left;
-  flex-direction: column;
   max-width: 85%;
 }
 
-.info p, .twitter p{
+.info p, .twitter p, .credits p{
   margin-top: 2%;
   line-height: 1.1em;
 }
 
 .twitter{
   grid-area: twitter;
-  flex-direction: column;
 }
 
 .audio{
   grid-area: audio;
 }
 
+.thomas, .kavanaugh{
+  max-width: 85%;
+}
 .thomas{
   grid-area: thomas;
-  flex-direction: column;
 }
 
 .kavanaugh{
   grid-area: kavanaugh;
-  flex-direction: column;
 }
 
 .links{
@@ -163,38 +162,45 @@
 .questionCount {
     font-size: 1.1em;
     font-style: italic;
-    marign: 1% 0 1% 0;
+    margin: 1% 0 1% 0;
 }
 .questionCount span {
     font-weight: bold;
+    margin: 1% 0 1% 0;
 }
 
 ol.questions {
-    margin-top: 20px;
-    margin-left: 0;
+  margin-top: 1%;
+  margin-left: 0;
+  font-size: 1.1em;
 }
 ol.questions li {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 ul.answers {
-    margin-left: 20px;
-    margin-bottom: 20px;
+  margin: 2% 0 2% 2%;
+}
+
+ul.answers li{
+  margin: 1% 0 1% 0;
 }
 
 ul.responses li {
-    margin: 10px 20px 20px;
+    margin: 2% 0 2% 2%;;
 }
 ul.responses li p span {
     display: block;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.3em;
 }
 .complete ul.answers li.correct, ul.responses li.correct p span {
     color: #6C9F2E;
+    margin-bottom: 2%;
 }
 ul.responses li.incorrect p span {
     color: #B5121B;
+    margin-bottom: 2%;
 }
 
 .quizResults h3 {
