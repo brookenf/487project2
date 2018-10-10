@@ -84,6 +84,14 @@
   grid-area: twitter;
 }
 
+#curator-feed{
+  max-width: 85%;
+  margin-top: 2%;
+  max-height: 400px;
+  overflow-y: scroll;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .audio{
   grid-area: audio;
 }
