@@ -14,7 +14,7 @@
 
 .section h1{
   font-family: 'Indie Flower', cursive;
-  font-size: 5.2em;
+  font-size: 3em;
 }
 
 .section p{
@@ -45,7 +45,7 @@
 
 .believe-women{
   grid-template-areas:
-    'gallery audio';
+    'twitter audio';
 }
 
 .judges{
@@ -63,17 +63,27 @@
   flex-direction: column;
 }
 
-.photos img{
-  width: 500px;
+.photos img, .judges img{
+  width: 400px;
   height: auto;
+  margin: 2% 0 2% 0;
 }
 
 .info{
   grid-area: info;
+  text-align: left;
+  flex-direction: column;
+  max-width: 85%;
 }
 
-.gallery{
-  grid-area: gallery;
+.info p, .twitter p{
+  margin-top: 2%;
+  line-height: 1.1em;
+}
+
+.twitter{
+  grid-area: twitter;
+  flex-direction: column;
 }
 
 .audio{
@@ -82,10 +92,12 @@
 
 .thomas{
   grid-area: thomas;
+  flex-direction: column;
 }
 
 .kavanaugh{
   grid-area: kavanaugh;
+  flex-direction: column;
 }
 
 .links{

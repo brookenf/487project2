@@ -5,7 +5,7 @@
 var quizJSON = {
     "info": {
         "name":    "Test Your Knowledge!",
-        "main":    "<p>Feminist knowledge in five easy steps</p>",
+        "main":    "<p>How Feminist Are You?</p>",
         "results": "<h5>Learn More</h5><p>While a lot of good has happened in the past year because of #MeToo, we still have a long way to go until we reach full equality between men and women. Keep up the good fight.</p>",
         "level1":  "Feminist SLAYER",
         "level2":  "You\'ve got the equality sticker on your car, right?",

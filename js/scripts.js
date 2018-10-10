@@ -20,7 +20,7 @@ $(function(){
             'position': 'right',
             'tooltips':
             ['#MeToo',
-            '#MeToo: A History', '#BelieveSurvivors', 'Thomas vs. Kavanaugh',
+            '#MeToo: A History', '#BelieveWomen', 'Thomas vs. Kavanaugh',
             'Time\'s Up',
             'Quiz',
             'Sources' ]
