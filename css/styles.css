@@ -36,7 +36,7 @@
 .history, .believe-women, .judges, .sources{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 700px;
+  grid-template-rows: auto;
 }
 
 .history{
@@ -51,6 +51,7 @@
 
 .judges{
   grid-template-areas:
+    'hd hd'
     'thomas kavanaugh';
 }
 
@@ -75,13 +76,18 @@
   max-width: 85%;
 }
 
-.info p, .twitter p, .credits p{
+.info p, .twitter p, .credits p, .sources p{
   margin-top: 2%;
   line-height: 1.1em;
 }
 
 .twitter{
   grid-area: twitter;
+  margin-left: 5%;
+}
+
+.twitter h1{
+  margin-top: 5%;
 }
 
 #curator-feed{
@@ -96,11 +102,17 @@
   grid-area: audio;
 }
 
-.thomas, .kavanaugh{
+.thomas, .kavanaugh, .links{
   max-width: 85%;
 }
+
+.judges-header{
+  grid-area: hd;
+}
+
 .thomas{
   grid-area: thomas;
+  margin-left: 5%;
 }
 
 .kavanaugh{
@@ -109,6 +121,7 @@
 
 .links{
   grid-area: links;
+  margin-left: 5%;
 }
 
 .credits{
@@ -217,8 +230,73 @@ ul.responses li.incorrect p span {
 .quizResults h3 span {
     font-weight: normal;
     font-style: italic;
+    font-size: 1.2em;
 }
 .quizResultsCopy {
     clear: both;
     margin-top: 20px;
+}
+
+/*Sources page*/
+.sources a{
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.sources a:hover{
+  color: #7F3540;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 750px){
+
+  .history, .believe-women, .judges, .sources{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .history{
+    grid-template-areas:
+      'info'
+      'photos';
+  }
+
+  .info, .twitter, .audio .judges-header, .thomas, .kavanaugh, .links, .credits {
+    margin: 0 auto;
+    padding: 3% 0 3% 0;
+  }
+
+  .believe-women{
+    grid-template-areas:
+      'twitter'
+      'audio';
+  }
+
+  .twitter{
+    max-width: 85%;
+  }
+
+  #curator-feed{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+
+  .judges{
+    grid-template-areas:
+      'hd'
+      'thomas'
+      'kavanaugh';
+  }
+
+  .thomas{
+    margin: 0 auto;
+  }
+
+  .sources{
+    grid-template-areas:
+      'links'
+      'credits';
+  }
 }
