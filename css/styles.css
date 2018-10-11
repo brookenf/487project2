@@ -2,6 +2,30 @@
   color: #fff;
 }
 
+/*custom scrollbars*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ffb1c1;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #BF8591;
+}
+
 .flex{
   display: flex;
   align-items: center;
@@ -50,7 +74,15 @@
 }
 
 .viral{
-  margin-top: 1%;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.viral h1{
+  margin: 2% 0 2% 0;
+}
+.graph{
+  width: 100%;
 }
 
 .history{
@@ -77,6 +109,7 @@
 /*going into individual divs to set grid-area*/
 .photos{
   grid-area: photos;
+  margin-top: 2%;
 }
 
 .photos img, .judges img{
@@ -127,6 +160,8 @@
 
 .judges-header{
   grid-area: hd;
+  align-content: center;
+  margin: 2% 0 2% 0;
 }
 
 .thomas{
@@ -420,6 +455,7 @@ ul.responses li.incorrect p span {
 
   #curator-feed{
     max-height: 300px;
+    width: 100%;
     overflow-y: scroll;
   }
 
@@ -433,6 +469,11 @@ ul.responses li.incorrect p span {
   .thomas{
     margin: 0 auto;
   }
+
+  .card{
+    margin: 2% 0 2% 0;
+  }
+
 
   .sources{
     grid-template-areas:
