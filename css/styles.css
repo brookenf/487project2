@@ -49,6 +49,10 @@
     'cards2';
 }
 
+.viral{
+  margin-top: 1%;
+}
+
 .history{
   grid-template-areas:
     'photos info';
@@ -87,7 +91,7 @@
   max-width: 85%;
 }
 
-.info p, .twitter p, .credits p, .sources p{
+.info p, .twitter p, .credits p, .activismhd p, .sources p{
   margin-top: 2%;
   line-height: 1.1em;
 }
@@ -136,13 +140,14 @@
 
 .activismhd{
   grid-area: activismhd;
+  margin-top: 1%;
 }
 
 .cards1, .cards2{
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: 3%;
+  margin-top: 2%;
 }
 
 .cards1{
@@ -151,6 +156,7 @@
 
 .cards2{
   grid-area: cards2;
+  margin-bottom: 2%;
 }
 
 .links{
@@ -181,9 +187,13 @@
   position: relative;
 }
 
-.card h2, .card h3{
+.card h3{
   font-family: 'Indie Flower';
-  font-size: 1.3em;
+  font-size: 1.4em;
+}
+
+.card p{
+  line-height: 1em;
 }
 
 .card h3{
@@ -227,11 +237,35 @@
   transform: rotateY( 180deg );
 }
 /*adding in front bg img*/
+#card1, #card2, #card3, #card4, #card5, #card6{
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+}
+
 #card1{
   background-image: url(../img/times-up.jpeg);
-  background-position: center;
-  background-size: contain;
-  border-radius: 5px;
+}
+
+#card2{
+  background-image: url(../img/lisa-borders.jpg);
+}
+
+#card3{
+  background-image: url(../img/legal.JPG);
+}
+
+#card4{
+  background-image: url(../img/him-too.jpg);
+}
+
+#card5{
+  background-image: url(../img/womens-march.jpg);
+}
+
+#card6{
+  background-image: url(../img/silence-breakers.jpg);
 }
 
 /*styling for quiz*/
