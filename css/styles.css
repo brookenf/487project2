@@ -60,6 +60,7 @@
     'links credits';
 }
 
+/*going into individual divs to set grid-area*/
 .photos{
   grid-area: photos;
 }
@@ -79,6 +80,10 @@
 .info p, .twitter p, .credits p, .sources p{
   margin-top: 2%;
   line-height: 1.1em;
+}
+
+.graph1{
+  margin-top: 3%;
 }
 
 .twitter{

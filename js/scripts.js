@@ -7,8 +7,8 @@ $(function(){
 	       menu: null,
         direction: 'vertical',
         verticalCentered: true,
-        sectionsColor: ['#ffb6c1', '#FF6980', '#7F3540', '#CC929A', '#7F5B60', '#FF6980', '#ffb6c1'],
-        anchors: ['MeToo', 'History', 'BelieveWomen', 'Kavanaugh', 'TimesUp', 'Quiz', 'Sources'],
+        sectionsColor: ['#ffb6c1', '#FF7899', '#FF6980', '#7F3540', '#CC929A', '#7F5B60', '#FF6980', '#ffb6c1'],
+        anchors: ['MeToo', 'GoingViral', 'History', 'BelieveWomen', 'Kavanaugh', 'TimesUp', 'Quiz', 'Sources'],
         scrollingSpeed: 700,
         easing: 'easeInQuart',
         loopBottom: true,
@@ -20,7 +20,8 @@ $(function(){
             'position': 'right',
             'tooltips':
             ['#MeToo',
-            '#MeToo: A History', '#BelieveWomen', 'Thomas vs. Kavanaugh',
+            '#MeToo: A History',
+            'Going Viral', '#BelieveWomen', 'Thomas vs. Kavanaugh',
             'Time\'s Up',
             'Quiz',
             'Sources' ]
