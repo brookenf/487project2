@@ -7,7 +7,7 @@ $(function(){
 	       menu: null,
         direction: 'vertical',
         verticalCentered: true,
-        sectionsColor: ['#ffb6c1', '#FF7899', '#FF6980', '#7F3540', '#CC929A', '#7F5B60', '#FF6980', '#ffb6c1'],
+        sectionsColor: ['#ffb6c1', '#FF7899', '#FF6980', '#7F3540', '#CC929A', '#e75480', '#FF6980', '#ffb6c1'],
         anchors: ['MeToo', 'GoingViral', 'History', 'BelieveWomen', 'Kavanaugh', 'TimesUp', 'Quiz', 'Sources'],
         scrollingSpeed: 700,
         easing: 'easeInQuart',
@@ -49,6 +49,12 @@ $(function(){
       $('#slickQuiz').slickQuiz({
         // options
       });
+
+      //initializing the card flip
+      $('.card').click(function(){
+        $(this).toggleClass('flipped');
+      });
+
       //initializing the Curator.io
       (function(){
         var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
