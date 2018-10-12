@@ -6,7 +6,7 @@ var quizJSON = {
     "info": {
         "name":    "Test Your Knowledge!",
         "main":    "<p>How Feminist Are You?</p>",
-        "results": "<h5>Learn More</h5><p>While a lot of good has happened in the past year because of #MeToo, we still have a long way to go until we reach full equality between men and women. Keep up the good fight.</p>",
+        "results": "<p>While a lot of good has happened in the past year because of #MeToo, we still have a long way to go until we reach full equality between men and women. Keep up the good fight.</p>",
         "level1":  "Feminist SLAYER",
         "level2":  "You\'ve got the equality sticker on your car, right?",
         "level3":  "You must read theSkimm",
@@ -22,51 +22,52 @@ var quizJSON = {
                 {"option": "2006",      "correct": true},
                 {"option": "2003",     "correct": false} // no comma here
             ],
-            "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
-            "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
+            "correct": "<p><span>That's right!</span> Tarana Burke first coined the term over 12 years ago!</p>",
+            "incorrect": "<p><span>Nice Try</span> Me Too is actually <em>a lot</em> older than many people think! It was first coined in 2006.</p>" // no comma here
         },
-        { // Question 2 - Multiple Choice, Multiple True Answers, Select Any
-            "q": "Which of the following best represents your preferred breakfast?",
+        { // Question 2 - Multiple Choice, Single True Answer
+            "q": "How many times was #MeToo tweeted from January 2017 to January 2018?",
             "a": [
-                {"option": "Bacon and eggs",               "correct": false},
-                {"option": "Fruit, oatmeal, and yogurt",   "correct": true},
-                {"option": "Leftover pizza",               "correct": false},
-                {"option": "Eggs, fruit, toast, and milk", "correct": true} // no comma here
+                {"option": "5.5 million", "correct": false},
+                {"option": "7.7 million", "correct": true},
+                {"option": "6.6 million", "correct": false},
+                {"option": "8.8 million", "correct": false} // no comma here
             ],
-            "select_any": true,
-            "correct": "<p><span>Nice!</span> Your cholestoral level is probably doing alright.</p>",
-            "incorrect": "<p><span>Hmmm.</span> You might want to reconsider your options.</p>" // no comma here
+            "correct": "<p><span>CORRECT!!!</span> In the span of 48 hours after Alyssa Milano posted her tweet, almost a million tweets included #MeToo.</p>",
+            "incorrect": "<p><span>Think again</span> #MeToo has spanned the globe, reaching over 85 countries and sparking much-needed conversations." // no comma here
         },
         { // Question 3 - Multiple Choice, Multiple True Answers, Select All
-            "q": "Where are you right now? Select ALL that apply.",
+            "q": "What OTHER hashtags have spun off of #MeToo?",
             "a": [
-                {"option": "Planet Earth",           "correct": true},
-                {"option": "Pluto",                  "correct": false},
-                {"option": "At a computing device",  "correct": true},
-                {"option": "The Milky Way",          "correct": true} // no comma here
+                {"option": "#HimToo",           "correct": true},
+                {"option": "#WeBelieve",   "correct": false},
+                {"option": "#BelieveWomen",  "correct": true},
+                {"option": "#BelieveSurvivors",          "correct": true} // no comma here
             ],
             "correct": "<p><span>Brilliant!</span> You're seriously a genius, (wo)man.</p>",
-            "incorrect": "<p><span>Not Quite.</span> You're actually on Planet Earth, in The Milky Way, At a computer. But nice try.</p>" // no comma here
+            "incorrect": "<p><span>Not Quite.</span> The #MeToo Movement has spawned #HimToo for male survivors to speak out, #BelieveWomen after Dr. Blasey Ford accused Brett Kavanaugh of sexual assault, and #BelieveSurvivors to generally address society's lack of listening to women's assault stories.</p>" // no comma here
         },
         { // Question 4
-            "q": "How many inches of rain does Michigan get on average per year?",
+            "q": "What was the name of the woman who accused Justice Clarence Thomas of sexual misconduct and what year did that hearing take place?",
             "a": [
-                {"option": "149",    "correct": false},
-                {"option": "32",     "correct": true},
-                {"option": "3",      "correct": false},
-                {"option": "1291",   "correct": false} // no comma here
+                {"option": "Anne Jones, 1989",    "correct": false},
+                {"option": "Andrea Johnson, 1990",     "correct": false},
+                {"option": "Alice Hyatt, 1992", "correct": false},
+                {"option": "Anita Hill, 1991",   "correct": true} // no comma here
             ],
-            "correct": "<p><span>Holy bananas!</span> I didn't actually expect you to know that! Correct!</p>",
-            "incorrect": "<p><span>Fail.</span> Sorry. You lose. It actually rains approximately 32 inches a year in Michigan.</p>" // no comma here
+            "correct": "<p><span>Wowza</span> You really know your political history, huh? Hill accused Thomas of sexual misconduct in the workplace when he was a nominee back in the 90s.</p>",
+            "incorrect": "<p><span>Fail.</span> Sorry. The correct answer was Anita Hill in 1991. Now, almost thirty years later, has American politics and society really progressed that much forward?</p>" // no comma here
         },
         { // Question 5
-            "q": "Is Earth bigger than a basketball?",
+            "q": "Who was named Time Person of the Year 2017?",
             "a": [
-                {"option": "Yes",    "correct": true},
-                {"option": "No",     "correct": false} // no comma here
+                {"option": "The Silence Breakers",    "correct": true},
+                {"option": "Donald J. Trump", "correct": false},
+                {"option": "The Dreamers", "correct": false},
+                {"option": "Colin Kaepernick", "correct": false} // no comma here
             ],
-            "correct": "<p><span>Good Job!</span> You must be very observant!</p>",
-            "incorrect": "<p><span>ERRRR!</span> What planet Earth are <em>you</em> living on?!?</p>" // no comma here
+            "correct": "<p><span>Good Job!</span> The Silence Breakers, a group of men and women who spoke up about their experiences with sexual harrassment, were chosen as Time's Person of the Year.</p>",
+            "incorrect": "<p><span>ERRRR!</span> The others were just nominees for Time Person of the Year.</p>" // no comma here
         } // no comma here
     ]
 };

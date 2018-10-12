@@ -92,7 +92,7 @@
 
 .believe-women{
   grid-template-areas:
-    'twitter audio';
+    'twitter video';
 }
 
 .judges{
@@ -150,8 +150,12 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-.audio{
-  grid-area: audio;
+.video{
+  grid-area: video;
+}
+
+.video h1{
+  margin-bottom: 2%;
 }
 
 .thomas, .kavanaugh, .links{
@@ -196,7 +200,7 @@
 
 .links{
   grid-area: links;
-  margin-left: 5%;
+  margin: 5% 0 0 5%;
 }
 
 .credits{
@@ -438,7 +442,7 @@ ul.responses li.incorrect p span {
       'photos';
   }
 
-  .info, .twitter, .audio .judges-header, .thomas, .kavanaugh, .links, .credits {
+  .info, .twitter, .video .judges-header, .thomas, .kavanaugh, .links, .credits {
     margin: 0 auto;
     padding: 3% 0 3% 0;
   }
@@ -446,7 +450,7 @@ ul.responses li.incorrect p span {
   .believe-women{
     grid-template-areas:
       'twitter'
-      'audio';
+      'video';
   }
 
   .twitter{

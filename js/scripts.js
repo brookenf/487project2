@@ -61,6 +61,29 @@ $(function(){
         i.src = "https://cdn.curator.io/published/e1e1f5ab-d4e6-4561-a4a0-59cbef5c1b57.js";
         e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
       })();
+
+      //making the iframe responsive
+      var $allVideos = $("iframe[src^='//www.youtube.com'], object, embed"), $fluidEl = $("figure");
+
+	       $allVideos.each(function(){
+	          $(this)
+	           // jQuery .data does not work on object/embed elements
+    	    .attr('data-aspectRatio', this.height / this.width)
+    	    .removeAttr('height')
+    	    .removeAttr('width');
+    	   });
+
+	       $(window).resize(function() {
+
+	          var newWidth = $fluidEl.width();
+	          $allVideos.each(function() {
+
+	           var $el = $(this);
+	            $el
+	             .width(newWidth)
+	              .height(newWidth * $el.attr('data-aspectRatio'));
+           });
+	       }).resize();
     },
 	});
 
