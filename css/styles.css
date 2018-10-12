@@ -73,17 +73,12 @@
     'cards2';
 }
 
-/* .viral{
-  margin: 0 auto;
-  width: 90%;
-} */
+.graph{
+  width: 50%;
+}
 
 .viral h1{
   margin: 2% 0 2% 0;
-}
-
-.graph{
-  width: 100%;
 }
 
 .history{
@@ -438,6 +433,9 @@ ul.responses li.incorrect p span {
     grid-template-rows: auto;
   }
 
+  .graph{
+    width: 85%;
+  }
 
   .history{
     grid-template-areas:
@@ -445,10 +443,14 @@ ul.responses li.incorrect p span {
       'photos';
   }
 
-  /* .info, .twitter, .video, .judges-header .thomas, .kavanaugh, .links, .credits {
-    margin: 0 auto;
-    padding: 3% 0 3% 0;
-  } */
+  .info h1, .twitter h1{
+    text-align: center;
+  }
+
+  .info p{
+    width: 88%;
+    margin-bottom: 3%;
+  }
 
   .believe-women{
     grid-template-areas:
