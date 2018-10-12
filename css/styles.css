@@ -59,7 +59,7 @@
 /*styling for the Grids*/
 .history, .believe-women, .judges, .sources{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
 }
 
@@ -73,14 +73,15 @@
     'cards2';
 }
 
-.viral{
+/* .viral{
   margin: 0 auto;
   width: 90%;
-}
+} */
 
 .viral h1{
   margin: 2% 0 2% 0;
 }
+
 .graph{
   width: 100%;
 }
@@ -121,7 +122,7 @@
 .info{
   grid-area: info;
   text-align: left;
-  max-width: 85%;
+  /* max-width: 85%; */
 }
 
 .info p, .twitter p, .credits p, .activismhd p, .sources p{
@@ -143,7 +144,7 @@
 }
 
 #curator-feed{
-  max-width: 85%;
+  /* max-width: 85%; */
   margin-top: 2%;
   max-height: 400px;
   overflow-y: scroll;
@@ -158,9 +159,9 @@
   margin-bottom: 2%;
 }
 
-.thomas, .kavanaugh, .links{
+/* .thomas, .kavanaugh, .links{
   max-width: 85%;
-}
+} */
 
 .judges-header{
   grid-area: hd;
@@ -205,6 +206,7 @@
 
 .credits{
   grid-area: credits;
+  margin-top: 3%;
 }
 
 /*styling for the cards*/
@@ -292,7 +294,7 @@
 }
 
 #card3{
-  background-image: url(../img/legal.JPG);
+  background-image: url(../img/legal.jpg);
 }
 
 #card4{
@@ -310,7 +312,7 @@
 /*styling for quiz*/
 #slickQuiz{
   font-family: 'Open Sans', sans-serif;
-  font-size: 0.9em;
+  font-size: 1.1em;
   max-width: 80%;
   margin: 0 auto;
 }
@@ -428,13 +430,14 @@ ul.responses li.incorrect p span {
 }
 
 /*Media Queries*/
-@media screen and (max-width: 750px){
+@media screen and (max-width: 700px){
 
   .history, .believe-women, .judges, .sources{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-rows: auto;
   }
+
 
   .history{
     grid-template-areas:
@@ -442,10 +445,10 @@ ul.responses li.incorrect p span {
       'photos';
   }
 
-  .info, .twitter, .video .judges-header, .thomas, .kavanaugh, .links, .credits {
+  /* .info, .twitter, .video, .judges-header .thomas, .kavanaugh, .links, .credits {
     margin: 0 auto;
     padding: 3% 0 3% 0;
-  }
+  } */
 
   .believe-women{
     grid-template-areas:
@@ -453,13 +456,12 @@ ul.responses li.incorrect p span {
       'video';
   }
 
-  .twitter{
+  /* .twitter{
     max-width: 85%;
-  }
+  } */
 
   #curator-feed{
     max-height: 300px;
-    width: 100%;
     overflow-y: scroll;
   }
 
@@ -470,18 +472,18 @@ ul.responses li.incorrect p span {
       'kavanaugh';
   }
 
-  .thomas{
+  /* .thomas{
     margin: 0 auto;
-  }
+  } */
 
   .card{
     margin: 2% 0 2% 0;
   }
-
 
   .sources{
     grid-template-areas:
       'links'
       'credits';
   }
+/*end of media queries*/
 }

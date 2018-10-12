@@ -63,7 +63,7 @@ $(function(){
       })();
 
       //making the iframe responsive
-      var $allVideos = $("iframe[src^='//www.youtube.com'], object, embed"), $fluidEl = $("figure");
+      var $allVideos = $("iframe[src^='//www.youtube.com'], iframe[src^='//e.infogram.com'],object, embed"), $fluidEl = $("figure");
 
 	       $allVideos.each(function(){
 	          $(this)
@@ -82,7 +82,7 @@ $(function(){
 	            $el
 	             .width(newWidth)
 	              .height(newWidth * $el.attr('data-aspectRatio'));
-           });
+             });
 	       }).resize();
     },
 	});
