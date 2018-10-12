@@ -55,7 +55,7 @@ var quizJSON = {
                 {"option": "Alice Hyatt, 1992", "correct": false},
                 {"option": "Anita Hill, 1991",   "correct": true} // no comma here
             ],
-            "correct": "<p><span>Wowza</span> You really know your political history, huh? Hill accused Thomas of sexual misconduct in the workplace when he was a nominee back in the 90s.</p>",
+            "correct": "<p><span>Wowza!</span> You really know your political history, huh? Hill accused Thomas of sexual misconduct in the workplace when he was a nominee back in the 90s.</p>",
             "incorrect": "<p><span>Fail.</span> Sorry. The correct answer was Anita Hill in 1991. Now, almost thirty years later, has American politics and society really progressed that much forward?</p>" // no comma here
         },
         { // Question 5
@@ -67,7 +67,7 @@ var quizJSON = {
                 {"option": "Colin Kaepernick", "correct": false} // no comma here
             ],
             "correct": "<p><span>Good Job!</span> The Silence Breakers, a group of men and women who spoke up about their experiences with sexual harrassment, were chosen as Time's Person of the Year.</p>",
-            "incorrect": "<p><span>ERRRR!</span> The others were just nominees for Time Person of the Year.</p>" // no comma here
+            "incorrect": "<p><span>ERRRR!</span> The Silence Breakers ultimately won Time Person of the Year 2017. The others were just nominees.</p>" // no comma here
         } // no comma here
     ]
 };

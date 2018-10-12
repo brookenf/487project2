@@ -6,7 +6,6 @@
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
-
 }
 
 /* Track */
@@ -117,21 +116,18 @@
 .info{
   grid-area: info;
   text-align: left;
-  /* max-width: 85%; */
+  width: 90%;
 }
 
-.info p, .twitter p, .credits p, .activismhd p, .sources p{
+.info p, .twitter p, .judges p, .credits p, .activismhd p, .sources p{
   margin-top: 2%;
-  line-height: 1.1em;
-}
-
-.graph1{
-  margin-top: 3%;
+  line-height: 1.2em;
 }
 
 .twitter{
   grid-area: twitter;
-  margin-left: 5%;
+  margin: 0 auto;
+  width: 95%;
 }
 
 .twitter h1{
@@ -139,7 +135,6 @@
 }
 
 #curator-feed{
-  /* max-width: 85%; */
   margin-top: 2%;
   max-height: 400px;
   overflow-y: scroll;
@@ -154,9 +149,9 @@
   margin-bottom: 2%;
 }
 
-/* .thomas, .kavanaugh, .links{
-  max-width: 85%;
-} */
+.video p{
+  margin-top: 1%;
+}
 
 .judges-header{
   grid-area: hd;
@@ -164,9 +159,13 @@
   margin: 2% 0 2% 0;
 }
 
+.thomas, .kavanaugh{
+  width: 90%;
+  margin: 0 auto;
+}
+
 .thomas{
   grid-area: thomas;
-  margin-left: 5%;
 }
 
 .kavanaugh{
@@ -196,7 +195,8 @@
 
 .links{
   grid-area: links;
-  margin: 5% 0 0 5%;
+  margin-top: 5%;
+
 }
 
 .credits{
@@ -272,6 +272,7 @@
   -o-transform: rotateY( 180deg );
   transform: rotateY( 180deg );
 }
+
 /*adding in front bg img*/
 #card1, #card2, #card3, #card4, #card5, #card6{
   background-position: center;
@@ -345,6 +346,7 @@
 .quizArea, .quizResults {
     zoom: 1;
 }
+
 .quizArea:before, .quizArea:after, .quizResults:before, .quizResults:after {
     content: "\0020";
     display: block;
@@ -352,6 +354,7 @@
     visibility: hidden;
     font-size: 0;
 }
+
 .quizArea:after, .quizResults:after {
     clear: both;
 }
@@ -361,6 +364,7 @@
     font-style: italic;
     margin: 1% 0 1% 0;
 }
+
 .questionCount span {
     font-weight: bold;
     margin: 1% 0 1% 0;
@@ -371,6 +375,7 @@ ol.questions {
   margin-left: 0;
   font-size: 1.1em;
 }
+
 ol.questions li {
   margin-left: 0;
 }
@@ -386,15 +391,18 @@ ul.answers li{
 ul.responses li {
     margin: 2% 0 2% 2%;;
 }
+
 ul.responses li p span {
     display: block;
     font-weight: bold;
     font-size: 1.3em;
 }
+
 .complete ul.answers li.correct, ul.responses li.correct p span {
     color: #6C9F2E;
     margin-bottom: 2%;
 }
+
 ul.responses li.incorrect p span {
     color: #B5121B;
     margin-bottom: 2%;
@@ -403,11 +411,13 @@ ul.responses li.incorrect p span {
 .quizResults h3 {
     margin: 3% 0 3% 0;
 }
+
 .quizResults h3 span {
     font-weight: normal;
     font-style: italic;
     font-size: 1.2em;
 }
+
 .quizResultsCopy {
     clear: both;
     margin-top: 20px;
@@ -441,6 +451,20 @@ ul.responses li.incorrect p span {
     grid-template-areas:
       'info'
       'photos';
+    margin-top: 4%;
+  }
+
+  .info{
+    width: 98%;
+  }
+
+  .photos{
+    margin-bottom: 4%;
+  }
+
+  .photos img{
+    max-width: 100%;
+    height: auto;
   }
 
   .info h1, .twitter h1{
@@ -458,12 +482,18 @@ ul.responses li.incorrect p span {
       'video';
   }
 
-  /* .twitter{
-    max-width: 85%;
-  } */
+  .video{
+    margin: 5% 0 5% 0;
+  }
+
+  .video iframe{
+    width: 100% !important;
+    height: 100% !important;
+  }
 
   #curator-feed{
-    max-height: 300px;
+    max-height: 200px;
+    max-width: 100%;
     overflow-y: scroll;
   }
 
@@ -474,9 +504,17 @@ ul.responses li.incorrect p span {
       'kavanaugh';
   }
 
-  /* .thomas{
-    margin: 0 auto;
-  } */
+  .judges img{
+    max-width: 100%;
+  }
+
+  .kavanaugh{
+    margin-bottom: 5%;
+  }
+
+  .activism{
+    margin-top: 5%;
+  }
 
   .card{
     margin: 2% 0 2% 0;
@@ -486,6 +524,19 @@ ul.responses li.incorrect p span {
     grid-template-areas:
       'links'
       'credits';
+  }
+
+  .links, .credits{
+    margin: 5% 0 5% 0;
+  }
+
+  /*styling for quiz*/
+  .quizDescription p{
+    margin: 5% 0 5% 0;
+  }
+
+  ul.answers, ul.responses{
+    margin: 5% 0 5% 0;
   }
 /*end of media queries*/
 }
