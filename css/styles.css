@@ -166,6 +166,8 @@
 
 .thomas{
   grid-area: thomas;
+  border-right: solid 3px #fff;
+  padding-right: 7%;
 }
 
 .kavanaugh{
@@ -506,6 +508,13 @@ ul.responses li.incorrect p span {
 
   .judges img{
     max-width: 100%;
+  }
+
+  .thomas{
+    border-right: none;
+    padding: 0 0 5% 0;
+    border-bottom: solid 2px #fff;
+    margin-bottom: 5%;
   }
 
   .kavanaugh{
