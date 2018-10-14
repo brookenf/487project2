@@ -62,28 +62,17 @@ $(function(){
         e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
       })();
 
-      //making the iframe responsive
-      var $allVideos = $("iframe[src^='//www.youtube.com'], iframe[src^='//e.infogram.com'],object, embed"), $fluidEl = $("figure");
+      //adding in class for quiz on mobile
+      function myFunction(x) {
+        if (x.matches) { // If media query matches
+          $('#section7').addClass('pp-scrollable');
+        }
+      }
 
-	       $allVideos.each(function(){
-	          $(this)
-	           // jQuery .data does not work on object/embed elements
-    	    .attr('data-aspectRatio', this.height / this.width)
-    	    .removeAttr('height')
-    	    .removeAttr('width');
-    	   });
-
-	       $(window).resize(function() {
-
-	          var newWidth = $fluidEl.width();
-	          $allVideos.each(function() {
-
-	           var $el = $(this);
-	            $el
-	             .width(newWidth)
-	              .height(newWidth * $el.attr('data-aspectRatio'));
-             });
-	       }).resize();
+      var x = window.matchMedia("(max-width: 750px)")
+      myFunction(x) // Call listener function at run time
+      x.addListener(myFunction) // Attach listener function on state changes
+      //end of after Render
     },
 	});
 
