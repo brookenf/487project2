@@ -208,7 +208,6 @@
 
 /*styling for the cards*/
 .card{
-  background: #fff5ee;
   color: #000;
   width: 350px;
   height: 250px;
@@ -273,6 +272,8 @@
   -moz-transform: rotateY( 180deg );
   -o-transform: rotateY( 180deg );
   transform: rotateY( 180deg );
+  background-color: #fff5ee;
+  border-radius: 5px;
 }
 
 /*adding in front bg img*/
